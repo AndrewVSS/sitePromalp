@@ -36,6 +36,7 @@ div {
   height: 60px;
   background-color: rgb(80, 61, 61);
 
+
   img {
     height: inherit;
   }
