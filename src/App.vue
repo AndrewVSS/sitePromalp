@@ -28,7 +28,6 @@ div {
 
 #logo {
   height: inherit;
-  border: 1px solid red;
   background: url(http://promalpufa.ru/wp-content/themes/promalp/img/logo.png) no-repeat;
 }
 
