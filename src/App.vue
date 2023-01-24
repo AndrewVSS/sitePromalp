@@ -1,52 +1,87 @@
-<script setup>
-
-</script>
 
 <template>
-  <header class="header">
-    <div id="logo">
-      <img src="http://promalpufa.ru/wp-content/themes/promalp/img/logo.png">
-    </div>
+  <div class="main-block">
+    <header>
+      <div class="logo">
+        <img class="log" src="http://promalpufa.ru/wp-content/themes/promalp/img/logo.png">
+        <p class="header-text"> Промышленные альпинисты из Уфы</p>
+        <div class="header-phone">
+          <img class="icon" src="./components/img/phonelink-ring.png">
+          <p> +7(937) 316-16-28 <br> promalpufa@mail.ru </p>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="mainlogo">
+        <p class="maintext">PromAlpUfa</p>
+        <p class="text">Услуги промышленных альпинистов <br> с опытом работы более 7 лет</p>
 
-  </header>
-  <section class="main-block">
+      </div>
 
-  </section>
+    </section>
+  </div>
 
 </template>
 
 
 <style lang="less" scoped>
-.img {
-  width: 100%;
-  object-fit: cover;
+.logo {
+  margin-left: 300px;
+  display: flex;
+  align-items: center;
+
 }
 
-div {
-  box-sizing: border-box;
+.header-text {
+  color: #fff;
 }
 
-#logo {
-  height: inherit;
-  border: 1px solid green;
-  background: url(http://promalpufa.ru/wp-content/themes/promalp/img/logo.png) no-repeat;
-}
-
-.header {
+.log {
   height: 60px;
-  background-color: rgb(80, 61, 61);
+}
 
+.header-phone {
+  color: #fff;
+  margin-left: auto;
+  margin-right: 300px;
+  display: flex;
 
-  img {
-    height: inherit;
-  }
+}
+
+.icon {
+  height: 20px;
+  margin-top: 15px;
 }
 
 .main-block {
-  height: 600px;
+  height: 800px;
   background-image: url(http://promalpufa.ru/wp-content/themes/promalp/img/header-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.mainlogo {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Raleway-Thin;
+  text-align: center;
+  font-size: 53px;
+  margin-top: 200px;
+
+}
+
+.text {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: Raleway-Light;
+  text-align: center;
+  font-size: 20px;
+}
+
+.maintext {
+  border: 1px #fff solid;
+  max-width: 100%;
+
 }
 </style>
 
