@@ -1,21 +1,23 @@
 
 <template>
-  <div class="main-block">
+  <div class="main-img">
     <header>
       <div class="logo">
-        <img class="log" src="http://promalpufa.ru/wp-content/themes/promalp/img/logo.png">
-        <p class="header-text"> Промышленные альпинисты из Уфы</p>
-        <div class="header-phone">
-          <img class="icon" src="./components/img/phonelink-ring.png">
-          <p> +7(937) 316-16-28 <br> promalpufa@mail.ru </p>
+        <img class="logo__img" src="http://promalpufa.ru/wp-content/themes/promalp/img/logo.png">
+        <p class="logo__title"> Промышленные альпинисты из Уфы</p>
+        <div class="logo__phone">
+          <img class="phone__icon" src="./components/img/phonelink-ring.png">
+          <p class="phone__text"> +7(937) 316-16-28 <br> promalpufa@mail.ru </p>
         </div>
       </div>
     </header>
     <section>
-      <div class="mainlogo">
-        <p class="maintext">PromAlpUfa</p>
-        <p class="text">Услуги промышленных альпинистов <br> с опытом работы более 7 лет</p>
 
+      <div class="main-block">
+        <p class="main-block__name">PromAlpUfa</p>
+      </div>
+      <div class="main-text">
+        <p class="main-text__text">Услуги промышленных альпинистов <br> с опытом работы более 7 лет</p>
       </div>
 
     </section>
@@ -29,59 +31,60 @@
   margin-left: 300px;
   display: flex;
   align-items: center;
-
-}
-
-.header-text {
   color: #fff;
 }
 
-.log {
+.logo__img {
   height: 60px;
 }
 
-.header-phone {
+.logo__phone {
   color: #fff;
   margin-left: auto;
   margin-right: 300px;
   display: flex;
-
 }
 
-.icon {
+.phone__icon {
   height: 20px;
   margin-top: 15px;
 }
 
-.main-block {
+.main-img {
   height: 800px;
   background-image: url(http://promalpufa.ru/wp-content/themes/promalp/img/header-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.mainlogo {
+.main-block {
+  display: flex;
+  flex-direction: column;
   color: #fff;
+  align-items: center;
+  margin: 150px 850px 0px 850px;
+  border: 1px solid #fff;
+  border-bottom: none;
+}
+
+.main-block__name {
   text-transform: uppercase;
-  font-family: Raleway-Thin;
-  text-align: center;
   font-size: 53px;
-  margin-top: 200px;
-
+  padding: 30px;
+  padding-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.text {
-  margin-right: 20px;
-  margin-left: 20px;
-  font-family: Raleway-Light;
-  text-align: center;
+.main-text {
+  color: #fff;
+}
+
+.main-text__text {
   font-size: 20px;
-}
-
-.maintext {
-  border: 1px #fff solid;
-  max-width: 100%;
-
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 </style>
 
