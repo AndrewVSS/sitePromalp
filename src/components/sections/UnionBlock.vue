@@ -99,7 +99,7 @@
       &::before,
       &::after {
         content: '';
-        width: 50px;
+        width: 45px;
         height: 1px;
         background-color: #fff;
       }

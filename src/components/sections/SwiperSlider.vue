@@ -41,37 +41,34 @@ export default {
 
 <template>
     <swiper :navigation="true" :modules="modules" class="mySwiper">
-      <swiper-slide>
-       <div class="swiper1">
-            <div class="swiper1__titul1">Отремонтировали фасад Дома Правительства</div>
-                <div class="swiper1__list1">
-                    <MiniSlider1/>
-                    <div class="list1">
-                        <ol>
-                                <li>Помыто, загрунтовано и покрашено — 13800 м2 фасада</li>
-                                <li>Восстановлено 2300 м2 откосов</li>
-                                <li>Восстановлено 500 м2 фасадной плиты</li>
-                                <li>Загерметизированы 210 пог.метров температурных швов и установлен, придуманный нами, ходящий металлический короб</li>
-                                <li>Ежедневно после окончания работ осуществляли уборку территории за собой.</li>
-                                <p>Служащих администрации практически не беспокоила наша деятельность</p>
-                        </ol>
-                    </div>
-                </div>
-        </div>
-    </swiper-slide>
-      <swiper-slide>
-        <div class="swiper2">
-            <div class="swiper2__titul2">Строительно-монтажные работы на высоте</div>
-            <div class="swiper2__list2">
+      <swiper-slide class="swiper-slide">
+        <div class="swiper">Отремонтировали фасад Дома Правительства</div>
+                  <div class="swiper__raw">
+                      <MiniSlider1/>
+                      <div class="swiper__list">
+                          <ol>
+                                  <li>Помыто, загрунтовано и покрашено — 13800 м2 фасада</li>
+                                  <li>Восстановлено 2300 м2 откосов</li>
+                                  <li>Восстановлено 500 м2 фасадной плиты</li>
+                                  <li>Загерметизированы 210 пог.метров температурных швов и установлен, придуманный нами, ходящий металлический короб</li>
+                                  <li>Ежедневно после окончания работ осуществляли уборку территории за собой.</li>
+                                  <p>Служащих администрации практически не беспокоила наша деятельность</p>
+                          </ol>
+                      </div>
+                  </div>   
+      </swiper-slide>
+      <swiper-slide class="swiper-slide">
+            <div class="swiper">Строительно-монтажные работы на высоте</div>
+            <div class="swiper__raw">
                     <MiniSlider2/>
-                    <div class="list2">
+                    <div class="swiper__list">
                         <ol>
-                                <li>Демонтировали и обшили алюминиевыми листами башни Ново- <br>Стерлитамакской ТЭЦ объемом 1100 метров за 56 рабочих дней</li>
+                                <li>Демонтировали и обшили алюминиевыми листами башни Ново-Стерлитамакской ТЭЦ объемом 1100 метров за 56 рабочих дней</li>
                                 
                         </ol>
                     </div>
             </div>
-        </div>
+      
       </swiper-slide>
       <swiper-slide>Slide 3</swiper-slide>
       <swiper-slide>Slide 4</swiper-slide>
@@ -81,37 +78,54 @@ export default {
 
   <style lang="less" scoped>
 li {
-    text-align: left;
-    
+    text-align: left; 
 }
-.swiper1, swiper2{
+p {
+  text-align: left;
+}
+.mySwiper {
+  background-color: #fff;
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  max-width: 1750px;
+  width: 100%;
+  background-color: #dddddd;
+  justify-content: space-between;
+  font-family:'Lucida Sans Unicode'
+
+}
+.swiper {
+    
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
     display:flex;
     height: 400px;
-    color: #656565;
-    flex-direction: column;
-    justify-content:space-around;
-    
-    &__titul1 {
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 15px;
-        justify-content: center;
+    max-width: 1750px;
+    width: 100%;
+    color: #424242;
+    justify-content: center;
+    background-color: #dddddd;
+
+    &__raw {
+        display: flex;
+        max-width: 1700px;
+        width:100%;
+        justify-content: space-around;  
+        font-size: 17px;
+          
     }
 
-    &__list1 {
-        display: flex;
-        width: 1000px;
-        justify-content: space-between;
-            
-    }
-}
-.list1, list2{
+    &__list {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    width: 650px;
     align-items: center;
-    width: 540px;
-    // margin: 0 auto;
+    
+    
 }
+}
+
 
   </style>

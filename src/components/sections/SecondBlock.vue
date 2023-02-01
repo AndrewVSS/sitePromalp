@@ -21,6 +21,7 @@ p {
 }
 .main-container {
     color: rgb(101, 101, 101);
+    background-color: #fff;
     
 
     &__title {
