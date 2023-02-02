@@ -1,53 +1,49 @@
-<script setup>
-
+<script>
+import MainHeader from './components/sections/MainHeader.vue'
+import UnionBlock from './components/sections/UnionBlock.vue'
+import SecondBlock from './components/sections/SecondBlock.vue'
+import SwiperSlider from './components/sections/SwiperSlider.vue'
+export default {
+  components: {
+    MainHeader,
+    UnionBlock,
+    SecondBlock,
+    SwiperSlider
+  },
+  setup() {
+    
+  },
+}
 </script>
-
 <template>
-  <header class="header">
-    <div id="logo">
-      <img src="http://promalpufa.ru/wp-content/themes/promalp/img/logo.png">
-    </div>
-
-  </header>
-  <section class="main-block">
-
-  </section>
-
+  <div id="main-app">
+    <div class="main-img">
+      <MainHeader/>
+      <UnionBlock/>
+    </div>   
+    <SecondBlock/>
+    <SwiperSlider/>
+  </div>
 </template>
+
+    
+
 
 
 <style lang="less" scoped>
-.img {
-  width: 100%;
-  object-fit: cover;
+@header-height: 100px;
+
+p {
+  margin: 0;
 }
 
-div {
-  box-sizing: border-box;
-}
 
-#logo {
-  height: inherit;
-  border: 1px solid green;
-  background: url(http://promalpufa.ru/wp-content/themes/promalp/img/logo.png) no-repeat;
-}
-
-.header {
-  height: 60px;
-  background-color: rgb(80, 61, 61);
-
-
-  img {
-    height: inherit;
-  }
-}
-
-.main-block {
+.main-img {
   height: 600px;
   background-image: url(http://promalpufa.ru/wp-content/themes/promalp/img/header-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 </style>
-
-
