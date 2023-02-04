@@ -51,7 +51,8 @@
       font-size: 53px;
       height: 120px;
       padding: 0 40px;
-      width: auto;
+      max-width: 400px;
+      width:100%;
       position: relative;
 
 
@@ -91,7 +92,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 442px;
+      max-width: 482px;
+      width: 100%;
       height: 100px;
 
 
@@ -99,7 +101,7 @@
       &::before,
       &::after {
         content: '';
-        width: 45px;
+        width: 50px;
         height: 1px;
         background-color: #fff;
       }
@@ -107,7 +109,8 @@
 
     &__callback {
       display: flex;
-      width: 435px;
+      max-width: 435px;
+      width:100%;
       height: 50px;
       align-items: center;
       justify-content: space-between;
@@ -136,7 +139,8 @@
 
     &__description-list {
       display: flex;
-      width: 900px;
+      max-width: 900px;
+      width:100%;
       height: 150px;
       justify-content: space-around;
       align-items: center;

@@ -22,6 +22,11 @@ p {
 .main-container {
     color: rgb(101, 101, 101);
     background-color: #fff;
+    max-width: 1800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     
 
     &__title {
@@ -32,16 +37,16 @@ p {
     }
     &__projects {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
+        align-items:center;
+        justify-content:space-between;
+        width: 100%;
         margin: 0 auto;
         button {
             background-color: #BBBBBB;
             width: 345px;
             height: 45px;
             border: none;
-            margin: 0 5px;
+            margin: 0;
             padding: 0;
             font-size: 15px;
         }
