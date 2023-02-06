@@ -6,7 +6,9 @@ import SwiperSlider from './modules/slider/SwiperSlider.vue'
 import Clients from './components/sections/Clients.vue'
 import SchemeWork from './components/sections/SchemeWork.vue'
 import Services from './components/sections/Services.vue'
-//import  Icon  from '@iconify/vue';
+import Callback from './components/sections/Сallback.vue'
+import Footer from './components/sections/Footer.vue'
+
 export default {
   components: {
     MainHeader,
@@ -16,7 +18,8 @@ export default {
     Clients,
     SchemeWork,
     Services,
-    //Icon
+    Callback,
+    Footer
   },
   setup() {
     
@@ -34,6 +37,8 @@ export default {
     <Clients/>
     <SchemeWork/>
     <Services/>
+    <Callback/>
+    <Footer/>
   </div>
 </template>
 

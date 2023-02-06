@@ -20,9 +20,12 @@ body {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: #fff;
 }
 
 .swiper-slide {
+  display: flex;
+  flex-direction: column;
   background-position: center;
   background-size: cover;
   width: 300px;

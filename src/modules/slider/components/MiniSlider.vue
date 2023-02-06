@@ -47,7 +47,7 @@
       <swiper
       :style="{
           '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
+          '--swiper-pagination-color': '#ddds',
       }"
       :loop="true"
       :spaceBetween="10"
@@ -74,7 +74,7 @@
         class="mySwiper"
       >
         <swiper-slide v-for="image in imgs" :key="image.id">
-          <img :src="`http://promalpufa.ru/wp-content/uploads/2019/11${image.imagePath}`" />
+          <img :src="`http://promalpufa.ru/wp-content/uploads/2019/11${image.imagePath}`" style="height: 150px" />
         </swiper-slide>
       </swiper>
   </div>

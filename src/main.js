@@ -7,6 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 /* import specific icons */
 import { faBrush, faUserSecret, faTable, faChain, faSnowflake, faTree, faTint, faShield, faCubes, faClock, faUser, faMoneyBill, faCheckCircle} from '@fortawesome/free-solid-svg-icons'
@@ -14,7 +15,7 @@ import { faBrush, faUserSecret, faTable, faChain, faSnowflake, faTree, faTint, f
 
 
 /* add icons to the library */
-library.add(faUserSecret, faBrush, faTable, faChain, faSnowflake, faTree, faTint, faShield, faCubes, faClock, faUser, faMoneyBill, faCheckCircle)
+library.add(faUserSecret, faBrush, faTable, faChain, faSnowflake, faTree, faTint, faShield, faCubes, faClock, faUser, faMoneyBill, faCheckCircle, faWhatsapp)
 
 
 

@@ -199,7 +199,7 @@ p {
   text-align: right;
 }
 .mySwiper {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(244, 244, 244);
 }
 .swiper-slide {
   display: flex;

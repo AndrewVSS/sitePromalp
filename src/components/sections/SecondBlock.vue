@@ -22,7 +22,7 @@ p {
 .main-container {
     color: rgb(101, 101, 101);
     background-color: #fff;
-    max-width: 1800px;
+    max-width: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -38,12 +38,12 @@ p {
     &__projects {
         display: flex;
         align-items:center;
-        justify-content:space-between;
-        width: 100%;
+        justify-content:space-around;
+        width: 55%;
         margin: 0 auto;
         button {
             background-color: #BBBBBB;
-            width: 345px;
+            width: 285px;
             height: 45px;
             border: none;
             margin: 0;
