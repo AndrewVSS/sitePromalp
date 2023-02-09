@@ -1,6 +1,8 @@
 <template>
     <div class="main">
+        <p><a name="Clients"></a></p>
         <div class="main__titul">
+            
             <h2>КЛИЕНТЫ с 2012 года</h2>          
         </div>
         <div class="main__items">
@@ -55,17 +57,18 @@
         }
         &__items {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            max-width: 1800px;
-            width: 100%;
+            justify-content: center;
+            max-width: 1680px;
+            width: 80%;
 
             
         }
     }
     .clients-img {
-        max-width: 200px;
-        width: 100%;
+        max-width: 150px;
+    
         margin: auto;
         justify-content: space-between;
         

@@ -1,5 +1,6 @@
 <template>
     <div class="union-block">
+      <p><a name="UnionBlock"></a></p>
       <div class="union-block__title">
         <p>PromAlpUfa</p>
         <div class="union-block__description">

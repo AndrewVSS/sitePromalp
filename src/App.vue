@@ -8,6 +8,7 @@ import SchemeWork from './components/sections/SchemeWork.vue'
 import Services from './components/sections/Services.vue'
 import Callback from './components/sections/Сallback.vue'
 import Footer from './components/sections/Footer.vue'
+import Menu from './modules/slider/components/Menu.vue'
 
 export default {
   components: {
@@ -19,7 +20,8 @@ export default {
     SchemeWork,
     Services,
     Callback,
-    Footer
+    Footer,
+    Menu
   },
   setup() {
     
@@ -29,7 +31,8 @@ export default {
 <template>
   <div id="main-app">
     <div class="main-img">
-      <MainHeader/>
+      <MainHeader/> 
+      <Menu/>
       <UnionBlock/>
     </div>   
     <SecondBlock/>
@@ -61,5 +64,7 @@ p {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
 }
 </style>

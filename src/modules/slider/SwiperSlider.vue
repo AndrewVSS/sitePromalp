@@ -7,7 +7,7 @@ import "swiper/css";
   
 import "swiper/css/navigation";
   
-import "/src/style.css";
+
   
   // import required modules
 import { Navigation } from "swiper"
@@ -196,7 +196,7 @@ li {
     text-align: left; 
 }
 p {
-  text-align: right;
+  text-align: center;
 }
 .mySwiper {
   background-color: rgb(244, 244, 244);

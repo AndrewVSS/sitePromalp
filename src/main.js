@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import './style.css'
+//import './style.css'
 import App from './App.vue'
 
 /* import the fontawesome core */
@@ -10,12 +10,12 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 /* import specific icons */
-import { faBrush, faUserSecret, faTable, faChain, faSnowflake, faTree, faTint, faShield, faCubes, faClock, faUser, faMoneyBill, faCheckCircle} from '@fortawesome/free-solid-svg-icons'
+import { faBrush, faUserSecret, faTable, faChain, faSnowflake, faTree, faTint, faShield, faCubes, faClock, faUser, faMoneyBill, faCheckCircle, faBars} from '@fortawesome/free-solid-svg-icons'
 
 
 
 /* add icons to the library */
-library.add(faUserSecret, faBrush, faTable, faChain, faSnowflake, faTree, faTint, faShield, faCubes, faClock, faUser, faMoneyBill, faCheckCircle, faWhatsapp)
+library.add(faUserSecret, faBrush, faTable, faChain, faSnowflake, faTree, faTint, faShield, faCubes, faClock, faUser, faMoneyBill, faCheckCircle, faWhatsapp, faBars)
 
 
 

@@ -1,6 +1,7 @@
 <template>
     <div class="main-container">
         <div class="main-container__title">
+            <p><a name="SecondBlock"></a></p>
             <p>выполненные работы</p>
         </div>
         <div class="main-container__projects">
